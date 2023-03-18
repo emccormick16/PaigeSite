@@ -7,6 +7,7 @@ import axios from "axios";
 import { resetUser } from "../store/userSlice";
 import { RootState } from "../store";
 import Home from "./Home/Home";
+import "./app.css";
 
 const App = () => {
   const { user } = useSelector((state: RootState) => state.user);
@@ -36,7 +37,7 @@ const App = () => {
 
   return (
     <div>
-      <div>
+      <div className="main_topbar">
         {user.id ? (
           <button onClick={logout}>Logout</button>
         ) : (

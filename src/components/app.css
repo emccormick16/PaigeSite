@@ -1,0 +1,6 @@
+.main_topbar {
+  /* margin-bottom: 20px; */
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+}
