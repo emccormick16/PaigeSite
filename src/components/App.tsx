@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Login from "./Login";
+import Login from "./Login/Login";
 import { setUser } from "../store/userSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Routes, Route } from "react-router-dom";

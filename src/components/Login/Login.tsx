@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setUser } from "../store/userSlice";
+import { setUser } from "../../store/userSlice";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -9,6 +10,7 @@ const Login = () => {
     username: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target) return;
@@ -29,6 +31,7 @@ const Login = () => {
 
       dispatch(setUser(response.data));
     }
+    navigate("/");
   };
 
   const attemptLogin = async (event: React.MouseEvent<HTMLFormElement>) => {
