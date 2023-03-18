@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import Home from "./Home";
 import Login from "./Login";
 import { setUser } from "../store/userSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Routes, Route } from "react-router-dom";
 import axios from "axios";
+import { resetUser } from "../store/userSlice";
 import { RootState } from "../store";
 
 const App = () => {
@@ -24,6 +24,11 @@ const App = () => {
     }
   };
 
+  const logout = () => {
+    window.localStorage.removeItem("token");
+    dispatch(resetUser());
+  };
+
   useEffect(() => {
     loginWithToken();
   }, []);
@@ -31,15 +36,19 @@ const App = () => {
   // if (!user.id) return <Login />;
   return (
     <div>
-      <h1>Hi, My name is totally Ben!!!!</h1>
-      <h1>My Name is Louis!!</h1>
+      <div>
+        {user.id ? (
+          <button onClick={logout}>Logout</button>
+        ) : (
+          <button>Login</button>
+        )}
+      </div>
+      <h1>Paige McCormick Inc.</h1>
       <div>
         <nav>
-          <Link to="/">Hooooooooome</Link>
+          <Link to="/">Home</Link>
         </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Routes></Routes>
       </div>
     </div>
   );
