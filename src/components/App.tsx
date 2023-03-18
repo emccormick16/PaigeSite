@@ -46,7 +46,7 @@ const App = () => {
           </Link>
         )}
       </div>
-      <h1>Paige McCormick Inc.</h1>
+      <h1 className="header">Paige McCormick Inc.</h1>
       <div>
         <nav>
           <Link to="/">Home</Link>
