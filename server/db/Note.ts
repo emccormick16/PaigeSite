@@ -15,7 +15,7 @@ interface NoteModel
   > {
   id: CreationOptional<number>;
   text: string;
-  sessionLength: string;
+  sessionLength: number;
 }
 
 const Note = db.define<NoteModel>("user", {
