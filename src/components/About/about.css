@@ -1,3 +1,18 @@
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.paigeImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .aboutP {
   display: flex;
   flex-direction: column;
