@@ -3,7 +3,7 @@ import Note from "../Note";
 const noteSeed = async (users: any) => {
   console.log("SEEDING NOTES");
 
-  //creating recipes for the database to be seeded with
+  //creating notes for the database to be seeded with
 
   const [
     moeNote1,
@@ -63,6 +63,7 @@ const noteSeed = async (users: any) => {
   const { moe, lucy } = users;
 
   // Create associations using magic methods
+
   await moe.addNote(moeNote1);
   await moe.addNote(moeNote2);
   await moe.addNote(moeNote3);
