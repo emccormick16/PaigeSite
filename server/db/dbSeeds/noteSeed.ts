@@ -18,43 +18,43 @@ const noteSeed = async (users: any) => {
     lucyNote7,
   ] = await Promise.all([
     Note.create({
-      text: "Instant Pot Butter Chicken",
+      text: "Patient presented with dysarthria and reduced oral motor strength. Recommended exercises to improve speech clarity.",
       sessionLength: 30,
     }),
     Note.create({
-      text: "Instant Pot Mushroom Risotto",
+      text: "Patient with stuttering history. Used fluency shaping techniques to reduce disfluency and increase confidence in communication.",
       sessionLength: 45,
     }),
     Note.create({
-      text: "Shrimp Scampi with Broccoli",
+      text: "Diagnosed patient with apraxia of speech. Developed individualized treatment plan targeting phoneme production and prosody.",
       sessionLength: 60,
     }),
     Note.create({
-      text: "Chicken Parm Lasagna",
+      text: "Evaluated patient with voice disorder. Identified vocal nodules and provided education on vocal hygiene and therapy to reduce nodules.",
       sessionLength: 45,
     }),
     Note.create({
-      text: "Vegetarian Enchiladas",
+      text: "Assessed patient with language delay. Developed a therapy plan focused on expressive and receptive language skills.",
       sessionLength: 45,
     }),
     Note.create({
-      text: "Spaghetti Squash Parmesan Mushrooms",
+      text: "Patient with traumatic brain injury exhibiting aphasia. Used visual aids and cues to improve comprehension and expression.",
       sessionLength: 90,
     }),
     Note.create({
-      text: "Crock Pot Chicken Fajitas",
+      text: "Evaluated patient with dysphagia. Recommended modified diet and swallowing exercises to improve safety and efficiency.",
       sessionLength: 30,
     }),
     Note.create({
-      text: "Chipotle Sweet Potato Bowls",
+      text: "Diagnosed patient with Parkinson's disease exhibiting hypophonia. Recommended voice therapy to improve vocal loudness.",
       sessionLength: 75,
     }),
     Note.create({
-      text: "Chicken Tinga Bowls",
+      text: "Patient with cleft palate and velopharyngeal dysfunction. Developed speech therapy plan focused on resonance and articulation.",
       sessionLength: 60,
     }),
     Note.create({
-      text: "Tofu Stir Fry Noodles",
+      text: "Assessed patient with hearing loss and communication difficulties. Recommended hearing aids and communication strategies for improved quality of life.",
       sessionLength: 30,
     }),
   ]);
