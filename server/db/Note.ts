@@ -6,7 +6,7 @@ import Sequelize, {
   Model,
 } from "sequelize";
 
-const { UUID, UUIDV4, TEXT, NUMBER } = Sequelize;
+const { UUID, UUIDV4, TEXT, INTEGER } = Sequelize;
 
 interface NoteModel
   extends Model<
@@ -18,7 +18,7 @@ interface NoteModel
   sessionLength: number;
 }
 
-const Note = db.define<NoteModel>("user", {
+const Note = db.define<NoteModel>("note", {
   id: {
     type: UUID,
     primaryKey: true,
@@ -29,7 +29,7 @@ const Note = db.define<NoteModel>("user", {
     allowNull: false,
   },
   sessionLength: {
-    type: NUMBER,
+    type: INTEGER,
     allowNull: false,
   },
 });

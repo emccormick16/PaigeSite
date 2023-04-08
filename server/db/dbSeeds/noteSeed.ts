@@ -63,18 +63,18 @@ const noteSeed = async (users: any) => {
   const { moe, lucy } = users;
 
   // Create associations using magic methods
-  await moe.addRecipe(moeNote1);
-  await moe.addRecipe(moeNote2);
-  await moe.addRecipe(moeNote3);
-  await lucy.addRecipe(lucyNote1);
-  await lucy.addRecipe(lucyNote2);
-  await lucy.addRecipe(lucyNote3);
-  await lucy.addRecipe(lucyNote4);
-  await lucy.addRecipe(lucyNote5);
-  await lucy.addRecipe(lucyNote6);
-  await lucy.addRecipe(lucyNote7);
+  await moe.addNote(moeNote1);
+  await moe.addNote(moeNote2);
+  await moe.addNote(moeNote3);
+  await lucy.addNote(lucyNote1);
+  await lucy.addNote(lucyNote2);
+  await lucy.addNote(lucyNote3);
+  await lucy.addNote(lucyNote4);
+  await lucy.addNote(lucyNote5);
+  await lucy.addNote(lucyNote6);
+  await lucy.addNote(lucyNote7);
 
-  console.log("DONE SEEDING RECIPES");
+  console.log("DONE SEEDING NOTES");
 };
 
 export default noteSeed;

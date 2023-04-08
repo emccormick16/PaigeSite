@@ -12,7 +12,7 @@ const seed = async () => {
     User.create({ username: "ethyl", password: "123" }),
   ]);
 
-  const users = { moe, lucy };
+  const users = { moe, lucy, larry, ethyl };
 
   await noteSeed(users);
 
