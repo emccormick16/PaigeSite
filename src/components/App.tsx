@@ -9,6 +9,7 @@ import { RootState } from "../store";
 import Home from "./Home/Home";
 import "./app.css";
 import About from "./About/About";
+import MyAccount from "./MyAccount/MyAccount";
 
 const App = () => {
   const { user } = useSelector((state: RootState) => state.user);
@@ -52,11 +53,13 @@ const App = () => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
+          {user.id && <Link to="/myaccount">My Account</Link>}
         </nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
+          {user.id && <Route path="/myaccount" element={<MyAccount />}></Route>}
         </Routes>
       </div>
     </div>
