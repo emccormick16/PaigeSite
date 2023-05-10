@@ -38,7 +38,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main_nav">
       <div className="main_topbar">
         {user.id ? (
           <button onClick={logout}>Logout</button>
