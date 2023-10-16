@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
+    "build:css": "tailwindcss build src/styles.css -o public/styles.css",
     "test": "JWT=shhhhh mocha",
     "test:dev": "DATABASE_URL=postgres://localhost/paigedb npm run test -- --watch",
     "test:dev:quiet": "QUIET=true npm run test:dev",
@@ -19,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mui/material": "^5.13.5",
     "@reduxjs/toolkit": "^1.9.1",
     "@types/jest": "^29.2.5",
     "@types/react": "^18.0.26",
@@ -28,9 +30,12 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
+    "mui": "^0.0.1",
+    "node": "^20.7.0",
     "pg": "^8.8.0",
     "sequelize": "^6.25.3",
     "style-loader": "^3.3.2",
+    "tailwindcss": "^3.3.3",
     "ts-node": "^10.9.1",
     "volleyball": "^1.5.1"
   },
